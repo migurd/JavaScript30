@@ -12,31 +12,31 @@ const box = document.querySelector('.square');
 
 const pressedKey = e => {
   switch(e.keyCode) {
-    case 82:
+    case 65:
       rudeus.play();
       break;
-    case 77:
+    case 83:
       roxy.play();
       break;
-    case 83:
+    case 68:
       sylphiette.play();
       break;
-    case 69:
+    case 70:
       eris.play();
       break;
-    case 79:
+    case 71:
       orsted.play();
       break;
-    case 75:
+    case 72:
       kishirika.play();
       break;
-    case 87:
+    case 74:
       ruijerd.play();
       break;
-    case 78:
+    case 75:
       norn.play();
       break;
-    case 65:
+    case 76:
       aisha.play();
       break;
   }
