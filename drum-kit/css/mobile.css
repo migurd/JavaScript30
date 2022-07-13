@@ -17,7 +17,7 @@ body {
 #background {
   width: 100%;
   height: 100%;
-  background-image: url(../src/94537474_p0_master1200_digital_art_x4.jpg);
+  background-image: url(../src/mushoku-tensei-jobless-reincarnation-eris-boreas-greyrat-rudeus-greyrat-ruijerd-superdia-wallpaper-2560x1080_14.jpg);
   background-size: cover;
   display: flex;
 }
@@ -35,7 +35,7 @@ body {
 .square {
   height: 120px;
   width: 150px;
-  background-color: rgba(0, 0, 0, 0.568);
+  background-color: rgba(110, 0, 0, 0.685);
   border: 4px solid rgba(0, 0, 0, 0.699);
   display: flex;
   flex-direction: column;
@@ -44,13 +44,13 @@ body {
   opacity: 0.5;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.671);
   cursor: pointer;
-  transition: transform .2s;
+  transition: transform .05s;
 }
 
 .square:hover {
   opacity: 100;
   transform: scale(1.1);
-  border: 4px solid rgba(0, 247, 144, 0.493);
+  border: 4px solid rgba(0, 0, 0, 0.493);
 }
 
 .square:not(:last-child) {
