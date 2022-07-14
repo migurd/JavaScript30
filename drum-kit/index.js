@@ -1,10 +1,17 @@
-const rudeus = new Audio("./src/rudeus.mp3");
-const roxy = new Audio("./src/roxy.mp3");
-const sylphiette = new Audio("./src/sylphiette.mp3");
-const eris = new Audio("./src/eris.mp3");
-const orsted = new Audio("./src/orsted.mp3");
-const kishirika = new Audio("./src/kishirika.mp3");
-const ruijerd = new Audio("./src/ruijerd.mp3");
-const norn = new Audio("./src/norn.mp3");
-const aisha = new Audio("./src/aisha.mp3");
+window.addEventListener('keydown', function (e) {
+  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+  if (!audio) return; // Stop the function
+  audio.currentTime = 0 // rewind time
+  
+  const key = document.querySelector(`.square[data-key="${e.keyCode}"]`);
+  audio.play();
+  key.classList.add('playing'); 
+});
 
+function removeTransition(e) {
+  if(e.propertyName !== 'transform') return; // skip if it is not a transform
+  this.classList.remove('playing');
+}
+
+const keys = document.querySelectorAll('.square');
+keys.forEach(key => key.addEventListener('transitionend', removeTransition));

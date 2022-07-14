@@ -9,49 +9,61 @@
   <link rel="stylesheet" href="./css/mobile.css">
   <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 768px)">
   <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1024px)">
-  <script src="./index.js"></script>
   <title>Drum Kit :^)</title>
 </head>
 <body>
   <section id="background">
     <section id="container-squares">
-      <section id="square1" class="square">
+      <section data-key="65"  class="square">
         <p class="textLetter">A</p>
         <p class="textSound">Rudeus</p>
       </section>
-      <section id="square2" class="square">
+      <section data-key="83"  class="square">
         <p class="textLetter">S</p>
         <p class="textSound">Roxy</p>
       </section>
-      <section id="square3" class="square">
+      <section data-key="68"  class="square">
         <p class="textLetter">D</p>
         <p class="textSound">Sylphiette</p>
       </section>
-      <section id="square4" class="square">
+      <section data-key="70"  class="square">
         <p class="textLetter">F</p>
         <p class="textSound">Eris</p>
       </section>
-      <section id="square5" class="square">
+      <section data-key="71"  class="square">
         <p class="textLetter">G</p>
         <p class="textSound">Orsted</p>
       </section>
-      <section id="square6" class="square">
+      <section data-key="72"  class="square">
         <p class="textLetter">H</p>
         <p class="textSound">Kishirika</p>
       </section>
-      <section id="square7" class="square">
+      <section data-key="74"  class="square">
         <p class="textLetter">J</p>
         <p class="textSound">Ruijerd</p>
       </section>
-      <section id="square8" class="square">
+      <section data-key="75"  class="square">
         <p class="textLetter">K</p>
         <p class="textSound">Norn</p>
       </section>
-      <section id="square9" class="square">
+      <section data-key="76"  class="square">
         <p class="textLetter">L</p>
         <p class="textSound">Aisha</p>
       </section>
     </section>
   </section>
+
+  <audio data-key="65" src="src/rudeus.mp3"></audio>
+  <audio data-key="83" src="src/roxy.mp3"></audio>
+  <audio data-key="68" src="src/sylphiette.mp3"></audio>
+  <audio data-key="70" src="src/eris.mp3"></audio>
+  <audio data-key="71" src="src/orsted.mp3"></audio>
+  <audio data-key="72" src="src/kishirika.mp3"></audio>
+  <audio data-key="74" src="src/ruijerd.mp3"></audio>
+  <audio data-key="75" src="src/norn.mp3"></audio>
+  <audio data-key="76" src="src/aisha.mp3"></audio>
+
+  <script src="./index.js"></script>
+
 </body>
 </html>
