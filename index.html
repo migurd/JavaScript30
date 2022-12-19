@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js" defer></script>
+  <title>JS Drum Kit</title>
+</head>
+<body>
+  <div class="keys">
+    <!-- kbd semantic exists -->
+    <!--  You can data-name, if you want to add data that's not know
+          by HTML
+    -->
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">Cynthia</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">Joker</span>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <span class="sound">Mayonnaise</span>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>F</kbd>
+      <span class="sound">Squirtle</span>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <span class="sound">One Piece</span>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <span class="sound">Twenty one</span>
+    </div>
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+      <span class="sound">Friends</span>
+    </div>
+    <div data-key="75" class="key">
+      <kbd>K</kbd>
+      <span class="sound">??????????</span>
+    </div>
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
+      <span class="sound">You should...</span>
+    </div>
+  </div>
+
+  <audio data-key="65" src="./src/cynthia-theme-pokémon-By-Tuna.mp3"></audio>
+  <audio data-key="83" src="./src/joker-caught-a-pokémon-By-Tuna.mp3"></audio>
+  <audio data-key="68" src="./src/mayonnaise on an escalator (full song) (320 kbps).mp3"></audio>
+  <audio data-key="70" src="./src/squirtle-basic-By-Tuna.mp3"></audio>
+  <audio data-key="71" src="./src/the-one-piece-By-Tuna.mp3"></audio>
+  <audio data-key="72" src="./src/twenty-one-By-Tuna.mp3"></audio>
+  <audio data-key="74" src="./src/what-true-friendship-looks-like-animation-By-Tuna.mp3"></audio>
+  <audio data-key="75" src="./src/when-god.mp3"></audio>
+  <audio data-key="76" src="./src/you-should-treat-yourself-now-By-Tuna.mp3"></audio>
+</body>
+</html>
